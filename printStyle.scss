@@ -1,0 +1,48 @@
+@media print {
+  body > :not(.container) {
+    display: none;
+  }
+  .container > :not(.forPrint) {
+    display: none;
+  }
+
+  .forPrint {
+    .printIgnore {
+      display: none;
+    }
+
+    .col-md-2 {
+      width: 3cm;
+    }
+    .col-md-3 {
+      width: 4.5cm;
+    }
+    .col-md-4 {
+      width: 100%;
+      display: block;
+      * {
+        display: inline;
+        width: auto;
+        padding: 0;
+      }
+      label {
+        font-weight: bold;
+
+        &:after {
+          content: ": ";
+        }
+      }
+    }
+    .col-md-6 {
+      width: 9cm;
+    }
+    .col-12 {
+      width: 18cm;
+    }
+
+    input {
+      border: none;
+    }
+  }
+
+}

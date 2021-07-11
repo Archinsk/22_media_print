@@ -1,0 +1,45 @@
+@media print {
+  body > :not(.container) {
+    display: none;
+  }
+
+  .container > :not(.forPrint) {
+    display: none;
+  }
+
+  .forPrint .printIgnore {
+    display: none;
+  }
+  .forPrint .col-md-2 {
+    width: 3cm;
+  }
+  .forPrint .col-md-3 {
+    width: 4.5cm;
+  }
+  .forPrint .col-md-4 {
+    width: 100%;
+    display: block;
+  }
+  .forPrint .col-md-4 * {
+    display: inline;
+    width: auto;
+    padding: 0;
+  }
+  .forPrint .col-md-4 label {
+    font-weight: bold;
+  }
+  .forPrint .col-md-4 label:after {
+    content: ": ";
+  }
+  .forPrint .col-md-6 {
+    width: 9cm;
+  }
+  .forPrint .col-12 {
+    width: 18cm;
+  }
+  .forPrint input {
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=printStyle.css.map */
